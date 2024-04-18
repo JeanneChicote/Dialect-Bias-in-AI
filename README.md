@@ -1,3 +1,8 @@
 # Dialect-Bias-in-AI
-
-Project for Decoding Biases in AI class
+Introduction 
+Literature Review
+Methodology 
+Limitations 
+Analysis 
+Discussion 
+Conclusion

@@ -1,5 +1,6 @@
 # Dialect Bias in AI
-#### Jeanne Chicote-Navas, Ellie Copeland, Claudia Leopaldi, Wen Qi Loh
+#### By Jeanne Chicote-Navas, Ellie Copeland, Claudia Leopaldi, Wen Qi Loh
+***
 # Table of contents
 1. [Introduction](#introduction)
 2. [Literature Review](#litreview)

@@ -1,4 +1,4 @@
-# Dialect-Bias-in-AI
+# Dialect Bias in AI
 
 # Table of contents
 1. [Introduction](#introduction)

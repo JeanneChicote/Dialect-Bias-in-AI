@@ -8,6 +8,7 @@
 4. [Limitations](#limits)
 5. [Analysis](#analysis)
 6. [Discussion](#discussion)
+7. [Conclusion](#conclusion)
 
 ## Introduction <a name="introduction"></a>
 Some introduction text, formatted in heading 2 style
@@ -22,6 +23,8 @@ This is a sub paragraph, formatted in heading 3 style
 The second paragraph text
 
 ## Discussion <a name = "discussion"></a>
+
+## Conclusion <a name = "conclusion"></a>
 Blah blah blah
 
 

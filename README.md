@@ -11,21 +11,22 @@
 7. [Conclusion](#conclusion)
 
 ## Introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
+Wen Qi 
 
 ## Literature review <a name="litreview"></a>
-The first paragraph text
+Claudia
 
-## Methodology <a name="methods"></a>
-This is a sub paragraph, formatted in heading 3 style
+## Methodology + Limitations <a name="methods"></a>
+Jeanne + Ellie
 
 ## Analysis <a name="analysis"></a>
-The second paragraph text
+Claudia + Ellie
 
 ## Discussion <a name = "discussion"></a>
+Wen Qi + Jeanne
 
 ## Conclusion <a name = "conclusion"></a>
-Blah blah blah
+Wen Qi
 
 
 

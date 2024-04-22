@@ -16,14 +16,14 @@ Wen Qi
 ## Literature review <a name="litreview"></a>
 Claudia
 
-## Methodology + Limitations <a name="methods"></a>
-Jeanne + Ellie
+## Methodology 
+Ellie
 
 ## Analysis <a name="analysis"></a>
 Claudia + Ellie
 
-## Discussion <a name = "discussion"></a>
-Wen Qi + Jeanne
+## Discussion <a name = "discussion"></a> + Limitations <a name="methods"></a>
+Wen Qi + Jeanne + Jeanne
 
 ## Conclusion <a name = "conclusion"></a>
 Wen Qi

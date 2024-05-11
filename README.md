@@ -1,6 +1,6 @@
 # Dialect Bias in AI
 #### By Jeanne Chicote-Navas, Ellie Copeland, Claudia Leopaldi, Wen Qi Loh
-##
+***
 # Table of contents
 1. [Introduction](#introduction)
 2. [Literature Review](#litreview)
@@ -24,8 +24,8 @@ To conduct our analysis, we selected four English dialects: Received Pronunciati
 >[!CAUTION]
 >Need to upload the image of figure 1.
 
-Figure 1: Map of English Dialects in the United Kingdom 
-(Norwegian Digital Learning Arena, n.d.)
+<p align="center"> *Figure 1: Map of English Dialects in the United Kingdom* 
+<p align="center"> (Norwegian Digital Learning Arena, n.d.)
 
 RP, frequently referred to as “Queen's English” or “BBC English”, is considered by many to be the standard British dialect, commonly spoken in the Southeast of England. It is characterised by several notable phonetic features, including the pronunciation of the “h” sound at the start of words, such as “hello” and “house”, and the elongation of the vowel “a” in certain words, such as “bath” and “laugh”. RP is commonly used in formal settings, such as educational contexts and in the media. 
 
@@ -45,7 +45,7 @@ Several official English dialect corpora exist, including the British National C
 
 We selected 46 categories of words and phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive. We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
 
-Figure 2: Image of a subsection of our English dialect corpus
+<p align="center"> *Figure 2: Image of a subsection of our English dialect corpus*
 
 ### 3.2 Construction of prompts 
 Following the construction of our dialect corpus, we created 10 sentence prompts to feed ChatGPT. We aimed to keep these prompts as short as possible, using a combination of 3-4 words and phrases taken directly from the dialect corpus. By creating short phrases which referenced specific scenarios, we sought to minimise the bias which could be introduced by including too many additional words, and the variance which could arise from the different contexts outlined in the prompts. 
@@ -59,27 +59,27 @@ Whereas prompt #2 follows the structure:
 “Question about social gathering. Expression of intention to come + expression of effort to catch the bus.”
 
 
-Table 1: Subsection of dialect prompts
+<p align="center"> *Table 1: Subsection of dialect prompts*
 
 ### 3.3 Testing procedure 
 To begin our testing procedure, we fed ChatGPT each individual word or short phrase from our dialect corpus and asked it to make assumptions about an individual who might use this language.
 We used a single chat session for all these phrases and a created a new prompt for each dialect, with all the phrases and words in that dialect given in a list format. The script was the following: 
 
->[---:]
->_For every prompt, answer the following questions:
->A person says this expression.
->They work as:
->They are:
->They tend to have the following traits.
->Do this for all prompts_
+
+>_For every prompt, answer the following questions: \
+A person says this expression.\
+They work as:\
+They are:\
+They tend to have the following traits.\
+Do this for all prompts_
 
 We then fed ChatGPT each sentence prompt and asked it to make assumptions about an individual who might use this language, based on the following five questions: 
 
-[---:]
-_What occupation does this person have? 
-How would you describe this person? 
-What traits does this person have? 
-What accommodation do they live in? 
+
+>_What occupation does this person have? \
+How would you describe this person? \
+What traits does this person have? \
+What accommodation do they live in? \
 What educational and professional qualifications do they have?_ 
 
 We tested each prompt 4 times, across four different accounts, ensuring the temperature of ChatGPT was set to 0.7, to try and control for a certain level of randomness and variation in the AI’s responses. We decided to vary our testing procedures between us slightly, to see if it had any effect on the generated responses. For example, half of us created a “new chat” session for each prompt, to minimise the potential for cross-contamination among dialects. The other half used a “new chat” per dialect, to see if the prior responses made any impact on future assumptions. 
@@ -88,19 +88,19 @@ In total, ChatGPT generated 644 answers (444 based on the individual word prompt
 
 For this experiment, we were not able to gain access to the ChatGPT API, which may have shed some light on the AI’s decision making process. 
 
-Figure 3: Example of questions asked to ChatGPT
+<p align="center"> *Figure 3: Example of questions asked to ChatGPT*
 
 ### 3.4 Qualitative analysis  
 To begin our qualitative analysis, we tried to identify patterns within the responses to our single word prompts and longer sentence prompts, using a combination of word clouds and tallying. For example, we created a list of the top five adjectives, traits, and occupations generated by ChatGPT for each dialect. We also tallied the number of times ChatGPT was unwilling to make an assumption about an individual based on the prompts we provided. Finally, we tried to understand the socio-economic assumptions which were being made by the AI, by tallying the level of education it assumed the individual had and the type of accommodation in which they resided. 
 
-Table 2: Tally of the number of times ChatGPT was unwilling to make an assumption
+<p align="center"> *Table 2: Tally of the number of times ChatGPT was unwilling to make an assumption*
 
 
 ## Analysis <a name="analysis"></a>
 ### 4.1 Short prompts vs long prompts
 Our first test applied to the short prompts comprised only of words or short phrases directly from the corpus. The results from these prompts are quite neutral, vague, and untelling. For example, below are word clouds built from every response split by dialect. 
 
-Figure 4: Short prompt responses by dialect
+<p align="center"> *Figure 4: Short prompt responses by dialect*
 
 From these, we notice that ChatGPT will sometimes make random guesses, resulting in a myriad of non-related words, as seen in Queen’s and Singaporean English. There are some patterns and repeated vocabulary, but these do not assume the character of the person speaking or about their occupation. On the other hand, Northern English and Multicultural London English result in near-empty clouds, meaning there are no significant patterns or similarities between answers, as few words show up twice or more. Those words that are repeated enough to be shown are vague and non-specific and relate more to the language of the prompt rather than answering questions about the person saying them. In the figure above, we almost notice a gradient from QE to MLE, where SE gathers closer to QE and NE gathers with MLE. This is a pattern we continue to notice in our analysis. 
 
@@ -108,9 +108,9 @@ The short prompt tests then show that responses are more varied and random, with
 
 When we compare these prompts with longer sentence prompts, we immediately notice the difference in responses. For example, let’s look at Northern English and the responses of ChatGPT concerning the speaker’s occupation. 
 
-Figure 5: Northern English occupation responses for long and short prompts
+<p align="center"> *Figure 5: Northern English occupation responses for long and short prompts*
 
-Figure 7 shows these reponses in juxtaposition. On the left we find words in the responses to the occupation question from ChatGPT, for 10 long prompts, asked 4 times each. On the right, we find the answer to the “they work as” question in response to each of the NE words and short phrases (40 in total). The difference in results is striking; the short prompts do not lead to consistent responses, with only 4 words appearing wice or more. 
+Figure 5 shows these reponses in juxtaposition. On the left we find words in the responses to the occupation question from ChatGPT, for 10 long prompts, asked 4 times each. On the right, we find the answer to the “they work as” question in response to each of the NE words and short phrases (40 in total). The difference in results is striking; the short prompts do not lead to consistent responses, with only 4 words appearing wice or more. 
 
 Both word clouds are made from 40 ChatGPT responses, but the left cloud consists of 10 different prompts, whereas the right cloud accumulates 40 different prompt words and phrases. This could explain the lack of repeating words in the short prompts. However, we see that the left cloud shows some words appearing more than 15 times, like “blue-collar”, “construction”, and “manufacturing”. Any word appearing more than 4 times is then present in ChatGPT’s responses to different prompts. 
 
@@ -120,7 +120,7 @@ Overall, then, short prompts do not provide enough information for ChatGPT to an
 Part of the questions were to obtain adjectives that ChatGPT might associate with certain people and dialect-speakers. This was done with the question  “How would you describe them?”. Results from these questions are rather consistent between dialects, and highlight no biases. Below are the word clouds for this question grouped by dialect.
 
 
-Figure 6: “describe this person” word clouds by dialect
+<p align="center"> *Figure 6: “describe this person” word clouds by dialect*
 
 The common words that stick out are “express”, “language”, “social”, “polite”, “relaxed”, “comfortable”. Majoritarily positive, these adjectives do not say much about the speaker, but rather point out the fact that they are speaking, sometimes speaking to someone as implicitly or explicitly pointed out in the prompts. This is why most of these adjectives are related to sociability and language.
 

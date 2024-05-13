@@ -9,6 +9,7 @@
 5. [Analysis](#analysis)
 6. [Discussion](#discussion)
 7. [Conclusion](#conclusion)
+8. [Bibliography](#bibliography)
 
 ## Introduction <a name="introduction"></a>
 ### 1.1 Biases in Large Language Models against Dialect Speakers 
@@ -16,10 +17,10 @@ In recent years, large language models (LLMs) like ChatGPT, Microsoft Copilot an
 
 Several studies have uncovered both overt and covert racial, religious, gender and other biases in LLMs, demonstrating that these models are more likely to label minority groups as more offensive, more violent, less educated, and holding less prestigious jobs, among other negative labels (Fang et al. 2024; Hofmann et al. 2024; Abid, Farooqi, and Zou 2021; Sap et al. 2019). This is concerning given the rapidly increasing number of users and use cases, making the implications of discriminatory LLM responses more severe (Hu 2023). However, most of the research on dialect-related biases have been limited to the United States in relation to American English and African American English, leaving a research gap for other dialects (Sap et al. 2019; Hofmann et al. 2024).
 
-Therefore, this study aims to investigate the presence of systemic biases in ChatGPT-3.5 for different English dialects using reverse engineering. We varied the inputs solely by the dialect they are written in (i.e. keeping the content of the inputs the same across dialects), and compared the 200 outputs obtained based on word frequencies and the willingness of ChatGPT to make assumptions. 
+Therefore, this study aims to investigate the presence of systemic biases in ChatGPT-3.5 for different English dialects using reverse engineering. We varied the inputs solely by the dialect they are written in (i.e. keeping the content of the inputs the same across dialects), and compared the 1244 outputs obtained based on word frequencies and the willingness of ChatGPT to make assumptions. 
 
 ### 1.2 Our Study: English Dialects and ChatGPT
-To conduct our analysis, we selected four English dialects: Received Pronunciation (RP); Urban West Yorkshire English (UWYE); Singaporean English (SE); and Multicultural London English (MLE). We chose these specific dialects as they represent a diverse range of regional vernaculars with unique sociolinguistic characteristics. The map below shows the distribution of English dialects across the United Kingdom, with RP circled in blue, UWYE circled in red and MLE circled in white (Figure 1).
+To conduct our analysis, we selected four English dialects: Received Pronunciation (RP); Urban West Yorkshire English (UWYE); Singaporean English (SE); and Multicultural London English (MLE). We chose these specific dialects as they represent a diverse range of regional vernaculars with unique sociolinguistic characteristics (Accent Bias Britain. 2024). The map below shows the regional breakdown of the United Kingdom, with the areas where RP, UWYE and MLE are most commonly spoken circled (Figure 1).
 
 <p align="center"> <img width="480" alt="Screenshot 2024-05-13 at 11 01 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c10967b5-44ac-4b1e-a16b-f9c845e62bf1">
 <p align="center"> **Figure 1: Map of English Dialects in the United Kingdom** 
@@ -38,9 +39,7 @@ Claudia
 
 ## Methodology 
 ### 3.1 Creation of dialect corpus 
-Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. 
-
-We selected 46 categories of words and phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive. We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
+Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. We selected 46 categories of words and short phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive. We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
 
 <p align="center"><img width="1325" alt="Screenshot 2024-05-13 at 10 17 49" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/87457191-225b-4989-a9ce-76c163a6654d">
 <p align="center"> **Figure 2: Subsection of our English dialect corpus**
@@ -61,8 +60,7 @@ Whereas prompt #2 follows the structure:
 <p align="center"> **Table 1: Subsection of dialect prompts**
 
 ### 3.3 Testing procedure 
-To begin our testing procedure, we fed ChatGPT each individual word or short phrase from our dialect corpus and asked it to make assumptions about an individual who might use this language.
-We used a single chat session for all these phrases and a created a new prompt for each dialect, with all the phrases and words in that dialect given in a list format. The script was the following: 
+To begin our testing procedure, we fed ChatGPT each individual word and short phrase from our dialect corpus and asked it to make assumptions about an individual who might use this language. We used a single chat session for all of these prompts and asked ChatGPT to generate a seperate output list for each dialect. The script was the following: 
 
 
 >_For every prompt, answer the following questions: \
@@ -81,9 +79,9 @@ What traits does this person have? \
 What accommodation do they live in? \
 What educational and professional qualifications do they have?_ 
 
-We tested each prompt 4 times, across four different accounts, ensuring the temperature of ChatGPT was set to 0.7, to try and control for a certain level of randomness and variation in the AI’s responses. We decided to vary our testing procedures between us slightly, to see if it had any effect on the generated responses. For example, half of us created a “new chat” session for each prompt, to minimise the potential for cross-contamination among dialects. The other half used a “new chat” per dialect, to see if the prior responses made any impact on future assumptions. 
+We tested each sentance prompt 4 times, across four different accounts, ensuring the temperature of ChatGPT was set to 0.7, to try and control for a certain level of randomness and variation in the AI’s responses. We decided to vary our testing procedures between us slightly, to see if it had any effect on the generated responses. For example, half of us created a “new chat” session for each prompt, to minimise the potential for cross-contamination among dialects. The other half used a “new chat” per dialect, to see if the prior responses made any impact on future assumptions. 
 
-In total, ChatGPT generated 1244 answers (444 based on the individual word prompts and 800 based on the sentence prompts) providing assumptions about personality, occupation and socio-economic status, and education. 
+In total, ChatGPT generated 1244 answers (444 based on the individual word and short phrase prompts and 800 based on the sentence prompts) providing assumptions about personality, occupation and socio-economic status, and education. 
 
 For this experiment, we were not able to gain access to the ChatGPT API, which may have shed some light on the AI’s decision making process. 
   
@@ -102,7 +100,7 @@ Our first test applied to the short prompts comprised only of words or short phr
 
 <p align="center"> *Figure 4: Short prompt responses by dialect*
 
-From these, we notice that ChatGPT will sometimes make random guesses, resulting in a myriad of non-related words, as seen in Queen’s and Singaporean English. There are some patterns and repeated vocabulary, but these do not assume the character of the person speaking or about their occupation. On the other hand, Northern English and Multicultural London English result in near-empty clouds, meaning there are no significant patterns or similarities between answers, as few words show up twice or more. Those words that are repeated enough to be shown are vague and non-specific and relate more to the language of the prompt rather than answering questions about the person saying them. In the figure above, we almost notice a gradient from QE to MLE, where SE gathers closer to QE and NE gathers with MLE. This is a pattern we continue to notice in our analysis. 
+From these, we notice that ChatGPT will sometimes make random guesses, resulting in a myriad of non-related words, as seen in RP and SE. There are some patterns and repeated vocabulary, but these do not assume the character of the person speaking or about their occupation. On the other hand, Northern English and Multicultural London English result in near-empty clouds, meaning there are no significant patterns or similarities between answers, as few words show up twice or more. Those words that are repeated enough to be shown are vague and non-specific and relate more to the language of the prompt rather than answering questions about the person saying them. In the figure above, we almost notice a gradient from QE to MLE, where SE gathers closer to QE and NE gathers with MLE. This is a pattern we continue to notice in our analysis. 
 
 The short prompt tests then show that responses are more varied and random, with no obvious pattern for MLE and NE, and have some repetitions of very generalized and non-specific statements for QE and SE.
 
@@ -161,4 +159,14 @@ Secondly, our corpus would have been more rigorous with a larger sample size of 
 Our study contributes to existing literature on systemic biases in LLMs by studying four previously unstudied English dialects and demonstrating class and region-based prejudices in ChatGPT-3.5. Future research could further distinguish between class and region-based prejudices, investigating if the differences in LLM outputs across the four dialects are more so due to the LLM’s identification of the dialect used (QE/NE/SE/MLE) or the geographical region of the speaker (London, Southeast England, West Yorkshire, Singapore). For example, prompts could be written in Queen’s English but include “This person is from West Yorkshire”.
 
 
-
+## Bibliography <a name = "bibliography"></a>
++ Abid, Abubakar, Maheen Farooqi, and James Zou. 2021. ‘Persistent Anti-Muslim Bias in Large Language Models’. arXiv. http://arxiv.org/abs/2101.05783.
++ Department for Levelling Up, Housing & Communities, United Kingdom. 2021. ‘English Housing Survey 2020-21’. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1088514/EHS_2020-21_Regional_Housing_Trends_Factsheet.pdf.
++ Department of Statistics Singapore. 2024a. ‘Education and Literacy’. Base. May 2024. http://www.singstat.gov.sg/publications/reference/ebook/population/education-and-literacy.
++ ———. 2024b. ‘Households - Latest Data’. Base. May 2024. http://www.singstat.gov.sg/find-data/search-by-theme/households/households/latest-data.
++ Fang, Xiao, Shangkun Che, Minjia Mao, Hongzhe Zhang, Ming Zhao, and Xiaohang Zhao. 2024. ‘Bias of AI-Generated Content: An Examination of News Produced by Large Language Models’. Scientific Reports 14 (1): 5224. https://doi.org/10.1038/s41598-024-55686-2.
++ Hofmann, Valentin, Pratyusha Ria Kalluri, Dan Jurafsky, and Sharese King. 2024. ‘Dialect Prejudice Predicts AI Decisions about People’s Character, Employability, and Criminality’. arXiv. http://arxiv.org/abs/2403.00742.
++ Hu, Krystal. 2023. ‘ChatGPT Sets Record for Fastest-Growing User Base - Analyst Note’. Reuters, 2 February 2023, sec. Technology. https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/.
++ Norwegian Digital Learning Arena. n.d. ‘The Origins of British Accents - English 1 - NDLA’. Ndla.No. Accessed 8 May 2024. https://ndla.no/en/subject:1:c8d6ed8b-d376-4c7b-b73a-3a1d48c3a357/topic:59a2daf8-db7f-4f47-8160-551f9d9c582c/resource:e6f6b746-fc11-4d0c-b058-a807aaf1eb43.
++ Office for National Statistics, United Kingdom. 2023. ‘Education, England and Wales: Census 2021’. https://www.ons.gov.uk/peoplepopulationandcommunity/educationandchildcare/bulletins/educationenglandandwales/census2021.
++ Sap, Maarten, Dallas Card, Saadia Gabriel, Yejin Choi, and Noah A. Smith. 2019. ‘The Risk of Racial Bias in Hate Speech Detection’. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 1668–78. Florence, Italy: Association for Computational Linguistics. https://doi.org/10.18653/v1/P19-1163.

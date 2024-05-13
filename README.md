@@ -45,7 +45,8 @@ Several official English dialect corpora exist, including the British National C
 
 We selected 46 categories of words and phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive. We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
 
-<p align="center"> *Figure 2: Image of a subsection of our English dialect corpus*
+<p align="center"><img width="1325" alt="Screenshot 2024-05-13 at 10 17 49" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/87457191-225b-4989-a9ce-76c163a6654d">
+<p align="center"> **Figure 2: Subsection of our English dialect corpus**
 
 ### 3.2 Construction of prompts 
 Following the construction of our dialect corpus, we created 10 sentence prompts to feed ChatGPT. We aimed to keep these prompts as short as possible, using a combination of 3-4 words and phrases taken directly from the dialect corpus. By creating short phrases which referenced specific scenarios, we sought to minimise the bias which could be introduced by including too many additional words, and the variance which could arise from the different contexts outlined in the prompts. 

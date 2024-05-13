@@ -21,7 +21,7 @@ Therefore, this study aims to investigate the presence of systemic biases in Cha
 ### 1.2 Our Study: English Dialects and ChatGPT
 To conduct our analysis, we selected four English dialects: Received Pronunciation (RP); Urban West Yorkshire English (UWYE); Singaporean English (SE); and Multicultural London English (MLE). We chose these specific dialects as they represent a diverse range of regional vernaculars with unique sociolinguistic characteristics. The map below shows the distribution of English dialects across the United Kingdom, with RP circled in blue, UWYE circled in red and MLE circled in white (Figure 1).
 
-<p align="center"> <img width="564" alt="Screenshot 2024-05-13 at 10 38 47" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c3db530c-06d6-455e-b49a-7cf6d1a898da">
+<p align="center"> <img width="504" alt="Screenshot 2024-05-13 at 10 38 47" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c3db530c-06d6-455e-b49a-7cf6d1a898da">
 <p align="center"> **Figure 1: Map of English Dialects in the United Kingdom** 
 <p align="center"> (Norwegian Digital Learning Arena, n.d.)
 

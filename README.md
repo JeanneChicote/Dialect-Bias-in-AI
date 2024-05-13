@@ -84,7 +84,7 @@ What educational and professional qualifications do they have?_
 
 We tested each prompt 4 times, across four different accounts, ensuring the temperature of ChatGPT was set to 0.7, to try and control for a certain level of randomness and variation in the AI’s responses. We decided to vary our testing procedures between us slightly, to see if it had any effect on the generated responses. For example, half of us created a “new chat” session for each prompt, to minimise the potential for cross-contamination among dialects. The other half used a “new chat” per dialect, to see if the prior responses made any impact on future assumptions. 
 
-In total, ChatGPT generated 644 answers (444 based on the individual word prompts and 200 based on the sentence prompts) providing assumptions about personality, occupation and socio-economic status, and education. 
+In total, ChatGPT generated 1244 answers (444 based on the individual word prompts and 800 based on the sentence prompts) providing assumptions about personality, occupation and socio-economic status, and education. 
 
 For this experiment, we were not able to gain access to the ChatGPT API, which may have shed some light on the AI’s decision making process. 
   

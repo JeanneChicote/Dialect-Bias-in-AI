@@ -39,7 +39,7 @@ Claudia
 
 ## Methodology 
 ### 3.1 Creation of dialect corpus 
-Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. We selected 32 categories of words and short phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive (Accent Bias Britain 2024; Queen Mary. 2024; BBC Singlish. 2015; BBC North Yorkshire. 2005; BBC MLE. 2018). We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
+Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. We selected 32 categories of words and short phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive (Accent Bias Britain. 2024; BBC MLE. BBC Singlish. 2015; BBC North Yorkshire. 2005; 2018; BBC Voices. 2014; British Library. 2022; Queen Mary. 2024). We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
 
 <p align="center"><img width="1407" alt="Screenshot 2024-05-13 at 11 43 48" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/5174cebf-3303-437c-9636-4d2a8a7b6b15">
 <p align="center"> <strong>Table 1: Subsection of our English dialect corpus</strong>
@@ -162,7 +162,7 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 
 ## Bibliography <a name = "bibliography"></a>
 + Abid, Abubakar, Maheen Farooqi, and James Zou. 2021. ‘Persistent Anti-Muslim Bias in Large Language Models’. arXiv. http://arxiv.org/abs/2101.05783.
-+ ———. 2024. 'Accent Bias Britain: A nation defined by the way it speaks'. https://accentbiasbritain.org/accents-in-britain/
++ ———. 2024. 'Accent Bias Britain: A nation defined by the way it speaks'. Accent Bias Britain. https://accentbiasbritain.org/accents-in-britain/
 + Castelow, Ellen. 2020. 'Yorkshire Dialect'. Historic UK. https://www.historic-uk.com/CultureUK/Yorkshire-Dialect/
 + Crystal, David. 2022. 'Recieved Pronunciation old and new'. University of Cambridge. https://www.cambridge.org/elt/blog/2022/05/25/received-pronunciation-old-new/ 
 + Department for Levelling Up, Housing & Communities, United Kingdom. 2021. ‘English Housing Survey 2020-21’. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1088514/EHS_2020-21_Regional_Housing_Trends_Factsheet.pdf.
@@ -180,6 +180,7 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 + Sap, Maarten, Dallas Card, Saadia Gabriel, Yejin Choi, and Noah A. Smith. 2019. ‘The Risk of Racial Bias in Hate Speech Detection’. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 1668–78. Florence, Italy: Association for Computational Linguistics. https://doi.org/10.18653/v1/P19-1163.
 + Wong, Tessa. 2015. 'The Rise of Singlish'. BBC. https://www.bbc.com/news/magazine-33809914
 + Yeo, Teresa Rebecca. 2023. 'Singlish'. National Library Board Singapore. https://www.nlb.gov.sg/main/article-detail?cmsuuid=5d5de338-98c5-4a97-9b51-727e807d6507
-+ ———. 2024. 'Spoken London English'. Queen Mary University of London. https://www.teachrealenglish.org/teaching-units/spoken-london-english/
++ ———. 2022. 'British Accents and Dialects'. British Library. https://www.bl.uk/british-accents-and-dialects
 + ———. 2005. 'North Yorkshire Voices'. BBC. https://www.bbc.co.uk/northyorkshire/voices2005/glossary/glossary.shtml
-+ ———. 2018. '17 Multicultural London English Words and What They Mean'. BBC. https://www.bbc.co.uk/programmes/articles/1H14PvBsbMGrwzRGTBDsbzP/17-multicultural-london-english-words-and-what-they-mean
++ ———. 2024. 'Spoken London English'. Queen Mary University of London. https://www.teachrealenglish.org/teaching-units/spoken-london-english/
++ ———. 2014 'Voices' BBC. https://www.bbc.co.uk/voices/yourvoice/voices_recordings.shtml+ ———. 2018. '17 Multicultural London English Words and What They Mean'. BBC. https://www.bbc.co.uk/programmes/articles/1H14PvBsbMGrwzRGTBDsbzP/17-multicultural-london-english-words-and-what-they-mean

@@ -162,12 +162,11 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 
 ## Bibliography <a name = "bibliography"></a>
 + Abid, Abubakar, Maheen Farooqi, and James Zou. 2021. ‘Persistent Anti-Muslim Bias in Large Language Models’. arXiv. http://arxiv.org/abs/2101.05783.
-+ ———. 2024. 'Accent Bias Britain: A nation defined by the way it speaks'. Accent Bias Britain. https://accentbiasbritain.org/accents-in-britain/
 + Castelow, Ellen. 2020. 'Yorkshire Dialect'. Historic UK. https://www.historic-uk.com/CultureUK/Yorkshire-Dialect/
 + Crystal, David. 2022. 'Recieved Pronunciation old and new'. University of Cambridge. https://www.cambridge.org/elt/blog/2022/05/25/received-pronunciation-old-new/ 
 + Department for Levelling Up, Housing & Communities, United Kingdom. 2021. ‘English Housing Survey 2020-21’. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1088514/EHS_2020-21_Regional_Housing_Trends_Factsheet.pdf.
 + Department of Statistics Singapore. 2024a. ‘Education and Literacy’. Base. May 2024. http://www.singstat.gov.sg/publications/reference/ebook/population/education-and-literacy.
-+ Dowd, Samuel. 'School of British Accents: A Tour of the British Isles in 8 Dialects'. Babble. https://www.babbel.com/en/magazine/guide-to-british-accents 
++ Dowd, Samuel. 'School of British Accents: A Tour of the British Isles in 8 Dialects'. Babble. https://www.babbel.com/en/magazine/guide-to-british-accents
 + ———. 2024b. ‘Households - Latest Data’. Base. May 2024. http://www.singstat.gov.sg/find-data/search-by-theme/households/households/latest-data.
 + Fang, Xiao, Shangkun Che, Minjia Mao, Hongzhe Zhang, Ming Zhao, and Xiaohang Zhao. 2024. ‘Bias of AI-Generated Content: An Examination of News Produced by Large Language Models’. Scientific Reports 14 (1): 5224. https://doi.org/10.1038/s41598-024-55686-2.
 + Hall, Daniel. 2020. 'The impersonal gets personal: A new pronoun in Multicultural London English'. Natural Language and Linguistic Theory. 3(38). DOI:10.1007/s11049-019-09447-w 
@@ -180,7 +179,9 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 + Sap, Maarten, Dallas Card, Saadia Gabriel, Yejin Choi, and Noah A. Smith. 2019. ‘The Risk of Racial Bias in Hate Speech Detection’. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 1668–78. Florence, Italy: Association for Computational Linguistics. https://doi.org/10.18653/v1/P19-1163.
 + Wong, Tessa. 2015. 'The Rise of Singlish'. BBC. https://www.bbc.com/news/magazine-33809914
 + Yeo, Teresa Rebecca. 2023. 'Singlish'. National Library Board Singapore. https://www.nlb.gov.sg/main/article-detail?cmsuuid=5d5de338-98c5-4a97-9b51-727e807d6507
++ ———. 2024. 'Accent Bias Britain: A nation defined by the way it speaks'. Accent Bias Britain. https://accentbiasbritain.org/accents-in-britain/
 + ———. 2022. 'British Accents and Dialects'. British Library. https://www.bl.uk/british-accents-and-dialects
 + ———. 2005. 'North Yorkshire Voices'. BBC. https://www.bbc.co.uk/northyorkshire/voices2005/glossary/glossary.shtml
 + ———. 2024. 'Spoken London English'. Queen Mary University of London. https://www.teachrealenglish.org/teaching-units/spoken-london-english/
-+ ———. 2014 'Voices' BBC. https://www.bbc.co.uk/voices/yourvoice/voices_recordings.shtml+ ———. 2018. '17 Multicultural London English Words and What They Mean'. BBC. https://www.bbc.co.uk/programmes/articles/1H14PvBsbMGrwzRGTBDsbzP/17-multicultural-london-english-words-and-what-they-mean
++ ———. 2014 'Voices' BBC. https://www.bbc.co.uk/voices/yourvoice/voices_recordings.shtml
++ ———. 2018. '17 Multicultural London English Words and What They Mean'. BBC. https://www.bbc.co.uk/programmes/articles/1H14PvBsbMGrwzRGTBDsbzP/17-multicultural-london-english-words-and-what-they-mean

@@ -132,7 +132,7 @@ Below is a table with the different observations made in ChatGPT responses throu
 With these results, we notice a grouping of dialects, where QE and SE elicit responses suggesting speakers have broad career paths, condo and suburban houses, and are educated and qualified individuals. On the other hand, UWYE and MLE speakers are assumed to be of lower education, and of middle-class, residing in public or shared housing. These show biases against UWYE and MLE speakers. Additionally, MLE speakers are consistently placed in an urban context, for all three categories, as they live in shared apartments, work in urban industries, and have skills in vocational fields such as fashion and music. NE speakers, on the other hand, are assumed to fit a very narrow and stereotypical profile, of a blue-collar worker in construction, with low education, and seemingly poor accommodation.  
 
 
-## Discussion <a name = "discussion"></a> + Limitations <a name="methods"></a>
+## Discussion <a name = "discussion"></a>
 ### 5.1 Are the findings due to algorithmic biases or do they simply reflect real-life statistics?
 
 As elaborated on in the previous section, our study found covert prejudices embedded in ChatGPT-3.5 significantly more so against MLE and UWYE dialects than RP and SE. These prejudices include discrimination based on socio-economic status, occupation, accommodation, and educational qualifications. However, a key question remains: Are these results indicative of systemic biases in ChatGPT or are they simply the result of statistical assumptions based on real data? To answer this question, we compared our study’s results to real-life data across the categories of accommodations and qualifications.

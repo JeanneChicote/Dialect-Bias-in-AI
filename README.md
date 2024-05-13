@@ -53,14 +53,15 @@ Following the construction of our dialect corpus, we created 10 sentence prompts
 
 For example, prompt #1 follows the structure: 
  
-“Greetings + how are you? Invitation to a social gathering + reference to a group of men.” 
+>“Greetings + how are you? Invitation to a social gathering + reference to a group of men.”
 
 Whereas prompt #2 follows the structure: 
 
-“Question about social gathering. Expression of intention to come + expression of effort to catch the bus.”
+>“Question about social gathering. Expression of intention to come + expression of effort to catch the bus.”
 
 
-<p align="center"> *Table 1: Subsection of dialect prompts*
+<p align="center"> <img width="805" alt="Screenshot 2024-05-13 at 10 22 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/951dfd17-ed0b-478e-80dd-f7fe920814a1">
+<p align="center"> Table 1: Subsection of dialect prompts
 
 ### 3.3 Testing procedure 
 To begin our testing procedure, we fed ChatGPT each individual word or short phrase from our dialect corpus and asked it to make assumptions about an individual who might use this language.

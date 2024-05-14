@@ -39,7 +39,7 @@ SE, sometimes referred to as “Singlish”, is the colloquial form of English u
 
 
 ## Literature review <a name="litreview"></a>
-Language and dialect play important roles in shaping societal perceptions and attitudes, often intersecting with notions of identity, prestige, and competence. The literature surrounding this topic, applied to the study of LLM systems, has several examples that inspired and guided our research on the biases present in ChatGPT. In "Multicultural London English and its speakers: a corpus-informed discourse study of standard language ideology and social stereotypes" (Kircher and Fox, 2021), the authors delve into the discourse surrounding Multicultural London English (MLE) and its speakers, shedding light on standard language ideology and the perpetuation of social stereotypes. This corpus-informed study uncovers the stark contrast in perceptions between speakers of MLE and those adhering to mainstream standard English, revealing deeply ingrained social biases and linguistic discrimination (Kircher and Fox, 2021). In fact, the authors claim that “The non-MLE speakers were also found to hold much stronger, and very negative, social stereotypes of multi ethnolect speakers. There was evidence of their use of iconisation and erasure in order to create linguistic (and social) differences between themselves and MLE speakers” (Kircher and Fox, 2021).
+Language and dialect play important roles in shaping societal perceptions and attitudes, often intersecting with notions of identity, prestige, and competence. The literature surrounding this topic, applied to the study of LLM systems, has several examples that inspired and guided our research on the biases present in ChatGPT. In "Multicultural London English and its speakers: a corpus-informed discourse study of standard language ideology and social stereotypes" (Kircher and Fox, 2021), the authors delve into the discourse surrounding Multicultural London English (MLE) and its speakers, shedding light on standard language ideology and the perpetuation of social stereotypes. This corpus-informed study uncovers the stark contrast in perceptions between speakers of MLE and those adhering to mainstream standard English, revealing deeply ingrained social biases and linguistic discrimination (Kircher and Fox, 2021). In fact, the authors claim that “the non-MLE speakers were also found to hold much stronger, and very negative, social stereotypes of multi ethnolect speakers. There was evidence of their use of iconisation and erasure in order to create linguistic (and social) differences between themselves and MLE speakers” (Kircher and Fox, 2021).
 
 Moreover, another interesting piece of literature that shows the importance of bringing forward these studies can be found in the article "Accent Bias and Perceptions of Professional Competence in England". The authors elucidate the phenomenon of accent bias and its ramifications on perceptions of professional competence within the English context. Drawing from empirical research, the authors demonstrate how individuals' accents influence judgments of competence and credibility, thereby underscoring the pervasive nature of accent-based discrimination in professional settings (Levon et al., 2021).
 
@@ -49,13 +49,13 @@ These works converge on the overarching theme of dialectal biases and their impl
 
 ## Methodology 
 ### 3.1 Creation of dialect corpus 
-Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. We selected 32 categories of words and short phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive (Accent Bias Britain. 2024; BBC MLE. BBC Singlish. 2015; BBC North Yorkshire. 2005; 2018; BBC Voices. 2014; British Library. 2022; Queen Mary. 2024). We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
+Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. We selected 32 categories of words and short phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC and the British Library (Accent Bias Britain. 2024; BBC MLE. 2018; BBC Singlish. 2015; BBC North Yorkshire. 2005; BBC Voices. 2014; British Library. 2022; Queen Mary. 2024). We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
 
 <p align="center"> <picture> <img width="1407" alt="Screenshot 2024-05-13 at 11 43 48" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/5174cebf-3303-437c-9636-4d2a8a7b6b15"> </picture> </p>
 <p align="center"> <strong>Table 1: Subsection of our English dialect corpus</strong> </p>
 
 
-### 3.2 Construction of prompts 
+### 3.2 Construction of sentence prompts 
 Following the construction of our dialect corpus, we created 10 sentence prompts to feed ChatGPT. We aimed to keep these prompts as short as possible, using a combination of 3-4 words and phrases taken directly from the dialect corpus. By creating short phrases which referenced specific scenarios, we sought to minimise the bias which could be introduced by including too many additional words, and the variance which could arise from the different contexts outlined in the prompts. 
 
 For example, prompt #1 follows the structure: 
@@ -71,7 +71,7 @@ Whereas prompt #2 follows the structure:
 <p align="center"> <strong>Table 2: Subsection of dialect prompts</strong> </p>
 
 ### 3.3 Testing procedure 
-To begin our testing procedure, we fed ChatGPT each individual word and short phrase from our dialect corpus and asked it to make assumptions about an individual who might use this language. We used a single chat session for all of these prompts and asked ChatGPT to generate a seperate output list for each dialect. The script was the following: 
+To begin our testing procedure, we fed ChatGPT each individual word from our dialect corpus and asked it to make assumptions about an individual who might use this language. We used a single chat session for all of these prompts and asked ChatGPT to generate a seperate list output for each dialect. The script was the following: 
 
 
 >_For every prompt, answer the following questions: \
@@ -92,7 +92,7 @@ What educational and professional qualifications do they have?_
 
 We tested each sentence prompt 4 times, across four different accounts, ensuring the temperature of ChatGPT was set to 0.7, to try and control for a certain level of randomness and variation in the AI’s responses. We decided to vary our testing procedures between us slightly, to see if it had any effect on the generated responses. For example, half of us created a “new chat” session for each prompt, to minimise the potential for cross-contamination among dialects. The other half used a “new chat” per dialect, to see if the prior responses made any impact on future assumptions. 
 
-In total, ChatGPT generated 1244 answers (444 based on the individual word and short phrase prompts and 800 based on the sentence prompts) providing assumptions about personality, occupation and socio-economic status, and education. 
+In total, ChatGPT generated 1244 answers (444 based on the individual word prompts and 800 based on the sentence prompts) providing assumptions about personality, occupation and socio-economic status, and education. 
 
 For this experiment, we were not able to gain access to the ChatGPT API, which may have shed some light on the AI’s decision-making process. 
   
@@ -100,7 +100,7 @@ For this experiment, we were not able to gain access to the ChatGPT API, which m
 <p align="center"> <strong>Figure 2: Example of questions asked to ChatGPT</strong> </p>
 
 ### 3.4 Qualitative analysis  
-To begin our qualitative analysis, we tried to identify patterns within the responses to our single-word prompts and longer sentence prompts, using a combination of word clouds and tallying. For example, we created a list of the top five adjectives, traits, and occupations generated by ChatGPT for each dialect. We also tallied the number of times ChatGPT was unwilling to make an assumption about an individual based on the prompts we provided. Finally, we tried to understand the socio-economic assumptions which were being made by the AI, by tallying the level of education it assumed the individual had and the type of accommodation in which they resided. 
+To begin our qualitative analysis, we tried to identify patterns within the responses to our indvidual word prompts and longer sentence prompts, using a combination of word clouds and tallying. For example, we created a list of the top five adjectives, traits, and occupations generated by ChatGPT for each dialect. We also tallied the number of times ChatGPT was unwilling to make an assumption about an individual based on the prompts we provided. Finally, we tried to understand the socio-economic assumptions which were being made by the AI, by tallying the level of education it assumed the individual had obtained and the type of accommodation in which they resided. 
 
 ## Analysis <a name="analysis"></a>
 ### 4.1 Short prompts vs long prompts
@@ -118,14 +118,14 @@ When we compare these prompts with longer sentence prompts, we immediately notic
 <p align="center"> <img width="692" alt="long and short" src="Figures_and_tables/Northern English occupation responses for long and short prompts.jpg"> </p>
  <p align = "center"> <strong>Figure 4: UWYE occupation responses for long and short prompts </strong> </p>
 
-Figure 5 shows these responses in juxtaposition. On the left, we find words in the responses to the occupation question from ChatGPT, for 10 long prompts, asked 4 times each. On the right, we find the answer to the “they work as” question in response to each of the UWYE words and short phrases (40 in total). The difference in results is striking; the short prompts do not lead to consistent responses, with only 4 words appearing twice or more. 
+Figure 4 shows these responses in juxtaposition. On the left, we find words in the responses to the occupation question from ChatGPT, for 10 long prompts, asked 4 times each. On the right, we find the answer to the “they work as” question in response to each of the UWYE words and short phrases (40 in total). The difference in results is striking; the short prompts do not lead to consistent responses, with only 4 words appearing twice or more. 
 
 Both word clouds are made from 40 ChatGPT responses, but the left cloud consists of 10 different prompts, whereas the right cloud accumulates 40 different prompt words and phrases. This could explain the lack of repeating words in the short prompts. However, we see that the left cloud shows some words appearing more than 15 times, like “blue-collar”, “construction”, and “manufacturing”. Any word appearing more than 4 times is then present in ChatGPT’s responses to different prompts. 
 
 Overall, then, short prompts do not provide enough information for ChatGPT to answer the questions asked, or to reveal the potential biases that it may show in these responses. 
 
 ### 4.2 Descriptive adjectives 
-Part of the questions were to obtain adjectives that ChatGPT might associate with certain people and dialect-speakers. This was done with the question  “How would you describe them?”. Results from these questions are rather consistent between dialects, and highlight no biases. Below are the word clouds for this question grouped by dialect.
+The objective of some of the questions was to obtain adjectives that ChatGPT might associate with certain people and dialect-speakers. This was done with the question  “How would you describe them?”. Results from these questions are rather consistent between dialects, and highlight no biases. Below are the word clouds for this question grouped by dialect.
 
 <p align = "center"> <img width="692" alt="describe" src="Figures_and_tables/“describe this person” word clouds by dialect.jpg"> </p>
 <p align="center"> <strong>Figure 5: “describe this person” word clouds by dialect </strong> </p>
@@ -138,18 +138,18 @@ An interesting observation, however, is that RP seems to stand apart from the ot
 
 Below is a table with the different observations made in ChatGPT responses through our qualitative analysis. They are sorted by dialect, and into three columns; occupation, housing, and qualifications, which follow the questions asked for each prompt in the script. For “qualifications”, the question adressed both academic and professional qualifications. 
 
-With these results, we notice a grouping of dialects, where QE and SE elicit responses suggesting speakers have broad career paths, condo and suburban houses, and are educated and qualified individuals. On the other hand, UWYE and MLE speakers are assumed to be of lower education, and of middle-class, residing in public or shared housing. These show biases against UWYE and MLE speakers. Additionally, MLE speakers are consistently placed in an urban context, for all three categories, as they live in shared apartments, work in urban industries, and have skills in vocational fields such as fashion and music. NE speakers, on the other hand, are assumed to fit a very narrow and stereotypical profile, of a blue-collar worker in construction, with low education, and seemingly poor accommodation.  
+With these results, we notice a grouping of dialects, where RP and SE elicit responses suggesting speakers have broad career paths, condo and suburban houses, and are educated and qualified individuals. On the other hand, UWYE and MLE speakers are assumed to be of lower education, and of middle-class, residing in public or shared housing. These show biases against UWYE and MLE speakers. Additionally, MLE speakers are consistently placed in an urban context, for all three categories, as they live in shared apartments, work in urban industries, and have skills in vocational fields such as fashion and music. UWYE speakers, on the other hand, are assumed to fit a very narrow and stereotypical profile, of a blue-collar worker in construction, with low education, and seemingly poor accommodation.  
 
 ### 4.4 (Un)willingness to make assumptions
-Another important result of our research regards the amount of times in which ChatGPT was unwilling to make an assumption on the person behind the prompt. In fact, as it is shown in Table 3, in almost 42% of Multicultural London English prompts and in more than half the Queen’s English ones, ChatGPT answered that it was unable to make an assumption based on the informations given, and it often elaborated an answer referring to the content provided more than the dialect proposed. 
+Another important result of our research regards the amount of times in which ChatGPT was unwilling to make an assumption on the person behind the prompt. In fact, as it is shown in Table 3, in almost 42% of MLE prompts and in more than half the RP ones, ChatGPT answered that it was unable to make an assumption based on the informations given, and it often elaborated an answer referring to the content provided more than the dialect proposed. 
 
-An example of this can be seen when the LLM was asked to make assumptions about the accommodation of a person that bought a lottery ticket. We first asked to do so about a person with a Queen’s English accent and then with a Northern English one. These were the answers:
+An example of this can be seen when the LLM was asked to make assumptions about the accommodation of a person that bought a lottery ticket. We first asked to do so about a person with an RP accent and then with a UWYE one. These were the answers:
 
->Queen’s English: _“The person's decision to buy a lottery ticket suggests they have disposable income and may be financially stable enough to afford leisure activities like gambling. They could live in various types of accommodation, ranging from apartments to single-family homes, depending on their financial situation and personal preferences.”_
+>RP: _“The person's decision to buy a lottery ticket suggests they have disposable income and may be financially stable enough to afford leisure activities like gambling. They could live in various types of accommodation, ranging from apartments to single-family homes, depending on their financial situation and personal preferences.”_
 
->Northern English: _“The use of Northern English dialect ("aye", "meself", "reet") suggests the person is likely from a region such as Yorkshire or Lancashire in Northern England. They may live in a suburban or urban area typical of Northern England, possibly in a house or apartment.”_
+>UWYE: _“The use of Northern English dialect ("aye", "meself", "reet") suggests the person is likely from a region such as Yorkshire or Lancashire in Northern England. They may live in a suburban or urban area typical of Northern England, possibly in a house or apartment.”_
 
-This shows that the LLM was quick to make assumptions on the individual once a dialect was detected, which happened in almost all Northern English prompts, otherwise, the answer was often based on the content of the prompt, as in most Queen’s English ones.
+This shows that the LLM was quick to make assumptions on the individual once a dialect was detected, which happened in almost all UWYE prompts, otherwise, the answer was often based on the content of the prompt, as in most RP ones.
 
 <p align="center"><img width="826" alt="Screenshot 2024-05-13 at 11 42 03" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/4db19bd9-beb0-48b0-bccb-4da736c46aef"> </p>
 <p align="center"> <strong>Table 3: Tally of the number of times ChatGPT was unwilling to make an assumption</strong> </p>
@@ -158,11 +158,11 @@ This shows that the LLM was quick to make assumptions on the individual once a d
 
 In our analysis, we delved into various approaches to interaction, each yielding distinct results. The utilisation of a singular chat for submitting all the prompts started showing less and less stereotypical assumptions the more prompts were fed. In fact the AI's responses initially were relatively charged with stereotypes, while towards the end most answers were relatively neutral, and ChatGPT avoided making overt assumptions.
 
-Conversely, employing separate chat instances for distinct dialects showed mixed results. Some interactions showcased a nuanced understanding of the different dialects used and, consequently making assumptions on the person’s circumstances. 
+Conversely, employing separate chat instances for distinct dialects showed mixed results. Some interactions showcased a nuanced understanding of the different dialects used and consequently made assumptions on the person’s circumstances. 
 
 One last strategy involved utilising separate chats for each individual phrase, unveiling intriguing insights into the AI's response patterns. Responses oscillated between two extremes: either delivering highly stereotypical assumptions or presenting relatively “bland” answers. 
 
-All these results are rather inconclusive and they show how, in some cases, the LLM picked up that what we were looking for was specific stereotypes for each dialect, and, in other cases, it since it understood that we were focusing on biases, which developers probably tried to fix, ChatGPT became less and less blunt with its assumptions.
+All these results are rather inconclusive and they show how, in some cases, the LLM picked up that what we were looking for was specific stereotypes for each dialect, and in other cases, since it understood that we were focusing on biases, which developers probably tried to fix, ChatGPT became less and less blunt with its assumptions.
 
 ## Discussion <a name = "discussion"></a>
 ### 5.1 Are the findings due to algorithmic biases or do they simply reflect real-life statistics?
@@ -200,7 +200,6 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 * Department for Levelling Up, Housing & Communities, United Kingdom. 2021. ‘English Housing Survey 2020-21’. https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1088514/EHS_2020-21_Regional_Housing_Trends_Factsheet.pdf.
 * Department of Statistics Singapore. 2024a. ‘Education and Literacy’. Base. May 2024. http://www.singstat.gov.sg/publications/reference/ebook/population/education-and-literacy.
 * Dowd, Samuel. 'School of British Accents: A Tour of the British Isles in 8 Dialects'. Babble. https://www.babbel.com/en/magazine/guide-to-british-accents
-* ———. 2024b. ‘Households - Latest Data’. Base. May 2024. http://www.singstat.gov.sg/find-data/search-by-theme/households/households/latest-data.
 * Fang, Xiao, Shangkun Che, Minjia Mao, Hongzhe Zhang, Ming Zhao, and Xiaohang Zhao. 2024. ‘Bias of AI-Generated Content: An Examination of News Produced by Large Language Models’. Scientific Reports 14 (1): 5224. https://doi.org/10.1038/s41598-024-55686-2.
 * Hall, Daniel. 2020. 'The impersonal gets personal: A new pronoun in Multicultural London English'. Natural Language and Linguistic Theory. 3(38). DOI:10.1007/s11049-019-09447-w 
 * Hofmann, Valentin, Pratyusha Ria Kalluri, Dan Jurafsky, and Sharese King. 2024. ‘Dialect Prejudice Predicts AI Decisions about People’s Character, Employability, and Criminality’. arXiv. http://arxiv.org/abs/2403.00742.
@@ -216,6 +215,7 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 * Yeo, Teresa Rebecca. 2023. 'Singlish'. National Library Board Singapore. https://www.nlb.gov.sg/main/article-detail?cmsuuid=5d5de338-98c5-4a97-9b51-727e807d6507
 * ———. 2024. 'Accent Bias Britain: A nation defined by the way it speaks'. Accent Bias Britain. https://accentbiasbritain.org/accents-in-britain/
 * ———. 2022. 'British Accents and Dialects'. British Library. https://www.bl.uk/british-accents-and-dialects
+* * ———. 2024b. ‘Households - Latest Data’. Base. May 2024. http://www.singstat.gov.sg/find-data/search-by-theme/households/households/latest-data.
 * ———. 2005. 'North Yorkshire Voices'. BBC. https://www.bbc.co.uk/northyorkshire/voices2005/glossary/glossary.shtml
 * ———. 2024. 'Spoken London English'. Queen Mary University of London. https://www.teachrealenglish.org/teaching-units/spoken-london-english/
 * ———. 2014 'Voices' BBC. https://www.bbc.co.uk/voices/yourvoice/voices_recordings.shtml

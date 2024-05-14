@@ -22,10 +22,10 @@ Therefore, this study aims to investigate the presence of systemic biases in Cha
 ### 1.2 Our Study: English Dialects and ChatGPT
 To conduct our analysis, we selected four English dialects: Received Pronunciation (RP); Urban West Yorkshire English (UWYE); Singaporean English (SE); and Multicultural London English (MLE). We chose these specific dialects as they represent a diverse range of regional vernaculars with unique sociolinguistic characteristics (Accent Bias Britain. 2024). The map below shows the regional breakdown of the United Kingdom, with the main areas where RP, UWYE and MLE are most commonly spoken circled (Figure 1).
 
-<p align="center"> <img width="480" alt="Screenshot 2024-05-13 at 11 01 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c10967b5-44ac-4b1e-a16b-f9c845e62bf1">
+<img width="480" alt="Screenshot 2024-05-13 at 11 01 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c10967b5-44ac-4b1e-a16b-f9c845e62bf1">
  
-<<p align="center"> Figure 1: Map of English Dialects in the United Kingdom>
-<br> 
+Figure 1: Map of English Dialects in the United Kingdom
+
 
 
 RP, frequently referred to as “Queen's English” or “BBC English”, is considered by many to be the standard British dialect, commonly spoken in the Southeast of England. It is characterised by several notable phonetic features, including the pronunciation of the “h” sound at the start of words, such as “hello” and “house”, and the elongation of the vowel “a” in certain words, such as “bath” and “laugh”. RP is commonly used in formal settings, such as educational contexts and in the media (Crystal. 2022; Dowd. 2021). 

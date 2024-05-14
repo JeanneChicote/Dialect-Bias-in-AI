@@ -156,7 +156,7 @@ This shows that the LLM was quick to make assumptions on the individual once a d
 
 ### 4.5 Different chat histories, different results
 
-In our analysis, we delved into various approaches to interaction, each yielding distinct results. The utilisation of a singular chat for submitting all the prompts started showing less and less stereotypical assumptions the more prompts were fed. In fact the AI's responses initially were relatively charged with stereotypes, while towards the end most answers were relatively neutral, and ChatGPT avoided making overt assumptions.
+When feeding the prompts to ChatGPT, we did it in a variety of ways, each yielding distinct results. The utilisation of a singular chat for submitting all the prompts started showing less and less stereotypical assumptions the more prompts were fed. In fact the AI's responses initially were relatively charged with stereotypes, while towards the end most answers were relatively neutral, and ChatGPT avoided making overt assumptions.
 
 Conversely, employing separate chat instances for distinct dialects showed mixed results. Some interactions showcased a nuanced understanding of the different dialects used and consequently made assumptions on the person’s circumstances. 
 

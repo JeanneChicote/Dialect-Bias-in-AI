@@ -215,7 +215,7 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 * Yeo, Teresa Rebecca. 2023. 'Singlish'. National Library Board Singapore. https://www.nlb.gov.sg/main/article-detail?cmsuuid=5d5de338-98c5-4a97-9b51-727e807d6507
 * ———. 2024. 'Accent Bias Britain: A nation defined by the way it speaks'. Accent Bias Britain. https://accentbiasbritain.org/accents-in-britain/
 * ———. 2022. 'British Accents and Dialects'. British Library. https://www.bl.uk/british-accents-and-dialects
-* * ———. 2024b. ‘Households - Latest Data’. Base. May 2024. http://www.singstat.gov.sg/find-data/search-by-theme/households/households/latest-data.
+* ———. 2024b. ‘Households - Latest Data’. Base. May 2024. http://www.singstat.gov.sg/find-data/search-by-theme/households/households/latest-data.
 * ———. 2005. 'North Yorkshire Voices'. BBC. https://www.bbc.co.uk/northyorkshire/voices2005/glossary/glossary.shtml
 * ———. 2024. 'Spoken London English'. Queen Mary University of London. https://www.teachrealenglish.org/teaching-units/spoken-london-english/
 * ———. 2014 'Voices' BBC. https://www.bbc.co.uk/voices/yourvoice/voices_recordings.shtml

@@ -23,7 +23,7 @@ Therefore, this study aims to investigate the presence of systemic biases in Cha
 To conduct our analysis, we selected four English dialects: Received Pronunciation (RP); Urban West Yorkshire English (UWYE); Singaporean English (SE); and Multicultural London English (MLE). We chose these specific dialects as they represent a diverse range of regional vernaculars with unique sociolinguistic characteristics (Accent Bias Britain. 2024). The map below shows the regional breakdown of the United Kingdom, with the main areas where RP, UWYE and MLE are most commonly spoken circled (Figure 1).
 
 
-<p align="center"> <picture> <img width="480" alt="Screenshot 2024-05-13 at 11 01 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c10967b5-44ac-4b1e-a16b-f9c845e62bf1"> <\picture>
+<p align="center"> <picture> <img width="480" alt="Screenshot 2024-05-13 at 11 01 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c10967b5-44ac-4b1e-a16b-f9c845e62bf1"> </picture>
 
 <p align="center"> <strong>  Figure 1: Map of English Dialects in the United Kingdom </strong>
 

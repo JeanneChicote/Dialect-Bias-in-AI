@@ -45,7 +45,7 @@ Claudia
 ### 3.1 Creation of dialect corpus 
 Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. We selected 32 categories of words and short phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive (Accent Bias Britain. 2024; BBC MLE. BBC Singlish. 2015; BBC North Yorkshire. 2005; 2018; BBC Voices. 2014; British Library. 2022; Queen Mary. 2024). We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
 
-<p align="center"> <picture> <img width="1407" alt="Screenshot 2024-05-13 at 11 43 48" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/5174cebf-3303-437c-9636-4d2a8a7b6b15"> <\picture>
+<p align="center"> < <img width="1407" alt="Screenshot 2024-05-13 at 11 43 48" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/5174cebf-3303-437c-9636-4d2a8a7b6b15"> 
 <p align="center"> <strong>Table 1: Subsection of our English dialect corpus</strong> 
 
 ### 3.2 Construction of prompts 

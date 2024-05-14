@@ -25,7 +25,7 @@ To conduct our analysis, we selected four English dialects: Received Pronunciati
 
 <p align="center"> <picture> <img width="480" alt="Screenshot 2024-05-13 at 11 01 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c10967b5-44ac-4b1e-a16b-f9c845e62bf1"> </picture> </p>
 
-<p align="center"> <strong>  Figure 1: Map of English Dialects in the United Kingdom </strong> </p>
+<p align="center"> <strong>  Figure 1: Map of English Dialects in the United Kingdom </strong> </p align>
 
 
 

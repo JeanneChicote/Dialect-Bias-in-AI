@@ -23,7 +23,9 @@ Therefore, this study aims to investigate the presence of systemic biases in Cha
 To conduct our analysis, we selected four English dialects: Received Pronunciation (RP); Urban West Yorkshire English (UWYE); Singaporean English (SE); and Multicultural London English (MLE). We chose these specific dialects as they represent a diverse range of regional vernaculars with unique sociolinguistic characteristics (Accent Bias Britain. 2024). The map below shows the regional breakdown of the United Kingdom, with the main areas where RP, UWYE and MLE are most commonly spoken circled (Figure 1).
 
 <p align="center"> <img width="480" alt="Screenshot 2024-05-13 at 11 01 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/c10967b5-44ac-4b1e-a16b-f9c845e62bf1">
-<p align="center"> <strong>Figure 1: Map of English Dialects in the United Kingdom</strong>
+<p align="center"> <strong>Figure 1: Map of English Dialects in the United Kingdom</strong> 
+
+
 
 RP, frequently referred to as “Queen's English” or “BBC English”, is considered by many to be the standard British dialect, commonly spoken in the Southeast of England. It is characterised by several notable phonetic features, including the pronunciation of the “h” sound at the start of words, such as “hello” and “house”, and the elongation of the vowel “a” in certain words, such as “bath” and “laugh”. RP is commonly used in formal settings, such as educational contexts and in the media (Crystal. 2022; Dowd. 2021). 
 
@@ -42,7 +44,7 @@ Claudia
 Several official English dialect corpora exist, including the British National Corpus (BNC), the Freiburg Corpus of English Dialects (FRED), and the London English Corpus (LEC). However, we found that these databases failed to provide a comprehensive list of comparable words and phrases which are present in all four English dialects and therefore opted to use these resources as a springboard to construct our own dialect corpus. We selected 32 categories of words and short phrases present in each English dialect, taken from several official dialect glossaries, mainly provided by the BBC Voices archive and the British Library archive (Accent Bias Britain. 2024; BBC MLE. BBC Singlish. 2015; BBC North Yorkshire. 2005; 2018; BBC Voices. 2014; British Library. 2022; Queen Mary. 2024). We sought to include distinctive words and phrases present in each dialect, which included specific linguistic features, such as the UWYE “glottal stop” and the MLE “hard t”. 
 
 <p align="center"><img width="1407" alt="Screenshot 2024-05-13 at 11 43 48" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/5174cebf-3303-437c-9636-4d2a8a7b6b15">
-<p align="center"> <strong>Table 1: Subsection of our English dialect corpus</strong>
+<p align="center"> <strong>Table 1: Subsection of our English dialect corpus</strong> \
 
 ### 3.2 Construction of prompts 
 Following the construction of our dialect corpus, we created 10 sentence prompts to feed ChatGPT. We aimed to keep these prompts as short as possible, using a combination of 3-4 words and phrases taken directly from the dialect corpus. By creating short phrases which referenced specific scenarios, we sought to minimise the bias which could be introduced by including too many additional words, and the variance which could arise from the different contexts outlined in the prompts. 
@@ -57,7 +59,7 @@ Whereas prompt #2 follows the structure:
 
 
 <p align="center"> <img width="705" alt="Screenshot 2024-05-13 at 10 22 24" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/951dfd17-ed0b-478e-80dd-f7fe920814a1">
-<p align="center"> <strong>Table 2: Subsection of dialect prompts</strong>
+<p align="center"> <strong>Table 2: Subsection of dialect prompts</strong> \
 
 ### 3.3 Testing procedure 
 To begin our testing procedure, we fed ChatGPT each individual word and short phrase from our dialect corpus and asked it to make assumptions about an individual who might use this language. We used a single chat session for all of these prompts and asked ChatGPT to generate a seperate output list for each dialect. The script was the following: 
@@ -86,20 +88,20 @@ In total, ChatGPT generated 1244 answers (444 based on the individual word and s
 For this experiment, we were not able to gain access to the ChatGPT API, which may have shed some light on the AI’s decision making process. 
   
 <p align="center"> <img width="692" alt="Screenshot 2024-05-13 at 10 31 56" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/9f4c4687-d2dd-4c76-ad32-cafdbb280ba1">
-<p align="center"> <strong>Figure 2: Example of questions asked to ChatGPT</strong>
+<p align="center"> <strong>Figure 2: Example of questions asked to ChatGPT</strong> \
 
 ### 3.4 Qualitative analysis  
 To begin our qualitative analysis, we tried to identify patterns within the responses to our single word prompts and longer sentence prompts, using a combination of word clouds and tallying. For example, we created a list of the top five adjectives, traits, and occupations generated by ChatGPT for each dialect. We also tallied the number of times ChatGPT was unwilling to make an assumption about an individual based on the prompts we provided. Finally, we tried to understand the socio-economic assumptions which were being made by the AI, by tallying the level of education it assumed the individual had and the type of accommodation in which they resided. 
 
 <p align="center"><img width="826" alt="Screenshot 2024-05-13 at 11 42 03" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/4db19bd9-beb0-48b0-bccb-4da736c46aef">
-<p align="center"> <strong>Table 3: Tally of the number of times ChatGPT was unwilling to make an assumption</strong>
+<p align="center"> <strong>Table 3: Tally of the number of times ChatGPT was unwilling to make an assumption</strong> \
 
 
 ## Analysis <a name="analysis"></a>
 ### 4.1 Short prompts vs long prompts
 Our first test applied to the short prompts comprised only of words and phrases taken directly from the corpus. The results from these prompts are quite neutral, vague, and untelling. For example, below are word clouds built from every response split by dialect. 
 
-<p align="center"> <strong>Figure 3: Short prompt responses by dialect</strong>
+<p align="center"> <strong>Figure 3: Short prompt responses by dialect</strong> \
 
 From these, we notice that ChatGPT will sometimes make random guesses, resulting in a myriad of non-related words, as seen in RP and SE. There are some patterns and repeated vocabulary, but these do not assume the character of the person speaking or about their occupation. On the other hand, UWYE and MLE result in near-empty clouds, meaning there are no significant patterns or similarities between answers, as few words show up twice or more. Those words that are repeated enough to be shown are vague and non-specific and relate more to the language of the prompt rather than answering questions about the person saying them. In the figure above, we almost notice a gradient from RP to MLE, where SE gathers closer to RP and UWYE gathers with MLE. This is a pattern we continue to notice in our analysis. 
 
@@ -119,7 +121,7 @@ Overall, then, short prompts do not provide enough information for ChatGPT to an
 Part of the questions were to obtain adjectives that ChatGPT might associate with certain people and dialect-speakers. This was done with the question  “How would you describe them?”. Results from these questions are rather consistent between dialects, and highlight no biases. Below are the word clouds for this question grouped by dialect.
 
 
-<p align="center"> *Figure 5: “describe this person” word clouds by dialect*
+<p align="center"> *Figure 5: “describe this person” word clouds by dialect \
 
 The common words that stick out are “express”, “language”, “social”, “polite”, “relaxed”, “comfortable”. Majoritarily positive, these adjectives do not say much about the speaker, but rather point out the fact that they are speaking, sometimes speaking to someone as implicitly or explicitly pointed out in the prompts. This is why most of these adjectives are related to sociability and language.
 
@@ -161,6 +163,7 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 
 
 ## Bibliography <a name = "bibliography"></a>
+
 + Abid, Abubakar, Maheen Farooqi, and James Zou. 2021. ‘Persistent Anti-Muslim Bias in Large Language Models’. arXiv. http://arxiv.org/abs/2101.05783.
 + Castelow, Ellen. 2020. 'Yorkshire Dialect'. Historic UK. https://www.historic-uk.com/CultureUK/Yorkshire-Dialect/
 + Crystal, David. 2022. 'Recieved Pronunciation old and new'. University of Cambridge. https://www.cambridge.org/elt/blog/2022/05/25/received-pronunciation-old-new/ 

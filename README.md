@@ -158,7 +158,7 @@ An example of this can be seen when the LLM was asked to make assumptions about 
 
 This shows that the LLM was quick to make assumptions on the individual once a dialect was detected, which happened in almost all UWYE prompts, otherwise, the answer was often based on the content of the prompt, as in most RP ones.
 
-<p align="center"><img width="826" alt="Screenshot 2024-05-13 at 11 42 03" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/4db19bd9-beb0-48b0-bccb-4da736c46aef"> </p>
+<p align="center"><img width="604" alt="Screenshot 2024-05-15 at 15 58 04" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/eaa4dc52-5a13-4167-b9b4-e5e1fb643dc3">
 <p align="center"> <strong>Table 3: Tally of the number of times ChatGPT was unwilling to make an assumption</strong> </p>
 
 ### 4.5 Different chat histories, different results

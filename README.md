@@ -148,7 +148,7 @@ Below is a table with the different observations made in ChatGPT responses throu
 With these results, we notice a grouping of dialects, where RP and SE elicit responses suggesting speakers have broad career paths, condo and suburban houses, and are educated and qualified individuals. On the other hand, UWYE and MLE speakers are assumed to be of lower education, and of middle-class, residing in public or shared housing. These show biases against UWYE and MLE speakers. Additionally, MLE speakers are consistently placed in an urban context, for all three categories, as they live in shared apartments, work in urban industries, and have skills in vocational fields such as fashion and music. UWYE speakers, on the other hand, are assumed to fit a very narrow and stereotypical profile, of a blue-collar worker in construction, with low education, and seemingly poor accommodation.  
 
 ### 4.4 (Un)willingness to make assumptions
-Another important result of our research regards the amount of times in which ChatGPT was unwilling to make an assumption on the person behind the prompt. In fact, as it is shown in Table 3, in almost 42% of MLE prompts and in more than half the RP ones, ChatGPT answered that it was unable to make an assumption based on the informations given, and it often elaborated an answer referring to the content provided more than the dialect proposed. 
+Another important result of our research regards the amount of times in which ChatGPT was unwilling to make an assumption on the person behind the prompt. In fact, as it is shown in Table 4, in almost 42% of MLE prompts and in more than half the RP ones, ChatGPT answered that it was unable to make an assumption based on the informations given, and it often elaborated an answer referring to the content provided more than the dialect proposed. 
 
 An example of this can be seen when the LLM was asked to make assumptions about the accommodation of a person that bought a lottery ticket. We first asked to do so about a person with an RP accent and then with a UWYE one. These were the answers:
 
@@ -159,7 +159,7 @@ An example of this can be seen when the LLM was asked to make assumptions about 
 This shows that the LLM was quick to make assumptions on the individual once a dialect was detected, which happened in almost all UWYE prompts, otherwise, the answer was often based on the content of the prompt, as in most RP ones.
 
 <p align="center"><img width="824" alt="Screenshot 2024-05-15 at 16 02 55" src="https://github.com/JeanneChicote/Dialect-Bias-in-AI/assets/167446119/fd27fbe3-a951-47d2-8050-cb5070619c3c">
-<p align="center"> <strong>Table 3: Tally of the number of times ChatGPT was unwilling to make an assumption</strong> </p>
+<p align="center"> <strong>Table 4: Tally of the number of times ChatGPT was unwilling to make an assumption</strong> </p>
 
 ### 4.5 Different chat histories, different results
 

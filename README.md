@@ -230,6 +230,8 @@ Our study contributes to existing literature on systemic biases in LLMs by study
 
 
 ## Appendix
+
+#### 1: List of words excluded from the word clouds
 * accommodation
 * known
 * specific

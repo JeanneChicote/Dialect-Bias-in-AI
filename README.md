@@ -109,6 +109,10 @@ Our first test applied to the short prompts comprised only of words and phrases 
 <p align = "center"> <img width="692" alt="short" src="Figures_and_tables/Short prompt responses by dialect.jpg"> </p>
 <p align="center"> <strong>Figure 3: Short prompt responses by dialect</strong> </p>
 
+>[!NOTE]
+>Word clouds include only words written at least twice in ChatGPT responses.
+>Every word cloud in this paper has excluded stop words, as well as “support” words which attribute no value, judgement, or information, such as “expression”, “probably”, “describe”, etc. Additionally, words present in the prompt themselves were excluded. The full list of words is in the appendix.
+
 From these, we notice that ChatGPT will sometimes make random guesses, resulting in a myriad of non-related words, as seen in RP and SE. There are some patterns and repeated vocabulary, but these do not assume the character of the person speaking or about their occupation. On the other hand, UWYE and MLE result in near-empty clouds, meaning there are no significant patterns or similarities between answers, as few words show up twice or more. Those words that are repeated enough to be shown are vague and non-specific and relate more to the language of the prompt rather than answering questions about the person saying them. In the figure above, we almost notice a gradient from RP to MLE, where SE gathers closer to RP and UWYE gathers with MLE. This is a pattern we continue to notice in our analysis. 
 
 The short prompt tests then show that responses are more varied and random, with no obvious pattern for MLE and UWYE, and have some repetitions of very generalized and non-specific statements for RP and SE.

@@ -109,7 +109,7 @@ Our first test applied to the short prompts comprised only of words and phrases 
 <p align = "center"> <img width="692" alt="short" src="Figures_and_tables/Short prompt responses by dialect.jpg"> </p>
 <p align="center"> <strong>Figure 3: Short prompt responses by dialect</strong> </p>
 
->[!NOTE]
+>**NOTE**
 >Word clouds include only words written at least twice in ChatGPT responses.
 >Every word cloud in this paper has excluded stop words, as well as “support” words which attribute no value, judgement, or information, such as “expression”, “probably”, “describe”, etc. Additionally, words present in the prompt themselves were excluded. The full list of words is in the appendix.
 

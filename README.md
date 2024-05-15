@@ -138,6 +138,9 @@ An interesting observation, however, is that RP seems to stand apart from the ot
 
 Below is a table with the different observations made in ChatGPT responses through our qualitative analysis. They are sorted by dialect, and into three columns; occupation, housing, and qualifications, which follow the questions asked for each prompt in the script. For “qualifications”, the question adressed both academic and professional qualifications. 
 
+<p align = "center"> <img width="692" alt="long and short" src="Figures_and_tables/4.3 table .jpg"> </p>
+<p align = "center"> <strong>Table 3: Observations from the long prompt responses </strong> </p>
+
 With these results, we notice a grouping of dialects, where RP and SE elicit responses suggesting speakers have broad career paths, condo and suburban houses, and are educated and qualified individuals. On the other hand, UWYE and MLE speakers are assumed to be of lower education, and of middle-class, residing in public or shared housing. These show biases against UWYE and MLE speakers. Additionally, MLE speakers are consistently placed in an urban context, for all three categories, as they live in shared apartments, work in urban industries, and have skills in vocational fields such as fashion and music. UWYE speakers, on the other hand, are assumed to fit a very narrow and stereotypical profile, of a blue-collar worker in construction, with low education, and seemingly poor accommodation.  
 
 ### 4.4 (Un)willingness to make assumptions
